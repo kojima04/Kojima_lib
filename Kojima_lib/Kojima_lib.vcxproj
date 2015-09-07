@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12F2FD55-36D8-44DD-B24F-D485A82D5D57}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Kojima_lib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;include;C:\Program Files (x86)\Microsoft DirectX SDK (August 2009)\Include;$(IncludePath);</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\Microsoft DirectX SDK (August 2009)\Lib\x86;$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;include;C:\Program Files (x86)\Microsoft DirectX SDK (August 2009)\Include;$(IncludePath);</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\Microsoft DirectX SDK (August 2009)\Lib\x86;$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KOJIMA_LIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KOJIMA_LIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2DTexture.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationTable.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="BlockManager.cpp" />
+    <ClCompile Include="BumpMap.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Chara.cpp" />
+    <ClCompile Include="Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DebugFont.cpp" />
+    <ClCompile Include="DirectInput.cpp" />
+    <ClCompile Include="DirectManager.cpp" />
+    <ClCompile Include="DirectSound.cpp" />
+    <ClCompile Include="DrawObject.cpp" />
+    <ClCompile Include="DXObject.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="FPSManager.cpp" />
+    <ClCompile Include="HitSquare.cpp" />
+    <ClCompile Include="IndexTexture.cpp" />
+    <ClCompile Include="InstantEffect.cpp" />
+    <ClCompile Include="MaltiThread.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="RegressEquation.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="Spline.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureTable.cpp" />
+    <ClCompile Include="Wave.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DTexture.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationTable.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="BlockManager.h" />
+    <ClInclude Include="BumpMap.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Chara.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DebugFont.h" />
+    <ClInclude Include="DirectInput.h" />
+    <ClInclude Include="DirectManager.h" />
+    <ClInclude Include="DirectSound.h" />
+    <ClInclude Include="DrawObject.h" />
+    <ClInclude Include="DXObject.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="FPSManager.h" />
+    <ClInclude Include="HitSquare.h" />
+    <ClInclude Include="IndexTexture.h" />
+    <ClInclude Include="InstantEffect.h" />
+    <ClInclude Include="Macro.h" />
+    <ClInclude Include="MaltiThread.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="RegressEquation.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="Spline.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureTable.h" />
+    <ClInclude Include="Wave.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
