@@ -13,79 +13,64 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Calc">
-      <UniqueIdentifier>{2efecc5f-1a88-4573-8bbf-e8e2e31ec910}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Camera">
-      <UniqueIdentifier>{9c869b7b-e2b3-49f8-ac5a-e195e49460d4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\DirectX">
       <UniqueIdentifier>{304724a9-4d06-45a5-9b51-79a2bc054874}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Draw">
-      <UniqueIdentifier>{10b0b19a-bc09-48f1-9b39-1171289104f3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Formal">
-      <UniqueIdentifier>{10372b54-b012-4da1-95d2-f15cb330b4e4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Game">
-      <UniqueIdentifier>{94af0eb7-195f-4bbc-aaa4-c9ca5e3ba79a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\HLSL">
-      <UniqueIdentifier>{c4928de6-d81d-487d-8041-9c3511f7f1e3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\temp">
-      <UniqueIdentifier>{d69c94cc-9456-478a-9415-735f7f488df4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Calc">
-      <UniqueIdentifier>{08024205-ede8-48a2-8bad-1dd78bc9a72d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Camera">
-      <UniqueIdentifier>{ff8ad400-b25d-4a14-a0ed-0b84ce0b3dc6}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\DirectX">
       <UniqueIdentifier>{a5479003-1ea7-4fe6-a063-0fc0cc0e60ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Draw">
-      <UniqueIdentifier>{f9e4bc8c-bfd5-46e1-bee1-e986bfa7b894}</UniqueIdentifier>
+    <Filter Include="ヘッダー ファイル\General">
+      <UniqueIdentifier>{10372b54-b012-4da1-95d2-f15cb330b4e4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Formal">
-      <UniqueIdentifier>{f1f1949f-f9bb-44ba-86d3-dda060c34f10}</UniqueIdentifier>
+    <Filter Include="ヘッダー ファイル\DirectX\Draw">
+      <UniqueIdentifier>{10b0b19a-bc09-48f1-9b39-1171289104f3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Game">
-      <UniqueIdentifier>{b104e2da-5fbb-4fe2-a5a7-79f9c7ac19dc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\HLSL">
-      <UniqueIdentifier>{561b468b-ae56-4a97-aa72-0505b6f0d0a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\temp">
-      <UniqueIdentifier>{2abeda72-91e3-4006-b9ec-44db40a07389}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Draw\2D">
-      <UniqueIdentifier>{7a521823-8568-47c0-bd7f-d1383c6490b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Draw\3D">
-      <UniqueIdentifier>{9c99ce06-fbd6-4c55-9dcf-d43f392ea7aa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Draw\3D">
+    <Filter Include="ヘッダー ファイル\DirectX\Draw\3D">
       <UniqueIdentifier>{72a5938d-f5b0-4571-b9fc-8e6fb045e60f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Draw\2D">
+    <Filter Include="ヘッダー ファイル\DirectX\Draw\2D">
       <UniqueIdentifier>{910e66a5-4c59-4f10-892b-0bab4b5dc5a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DirectX\Draw\HLSL">
+      <UniqueIdentifier>{c4928de6-d81d-487d-8041-9c3511f7f1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DirectX\Camera">
+      <UniqueIdentifier>{9c869b7b-e2b3-49f8-ac5a-e195e49460d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\General">
+      <UniqueIdentifier>{f1f1949f-f9bb-44ba-86d3-dda060c34f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX\Draw">
+      <UniqueIdentifier>{f9e4bc8c-bfd5-46e1-bee1-e986bfa7b894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX\Draw\2D">
+      <UniqueIdentifier>{7a521823-8568-47c0-bd7f-d1383c6490b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX\Draw\3D">
+      <UniqueIdentifier>{9c99ce06-fbd6-4c55-9dcf-d43f392ea7aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX\Draw\HLSL">
+      <UniqueIdentifier>{561b468b-ae56-4a97-aa72-0505b6f0d0a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX\Draw\Camera">
+      <UniqueIdentifier>{ff8ad400-b25d-4a14-a0ed-0b84ce0b3dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX\Calc">
+      <UniqueIdentifier>{08024205-ede8-48a2-8bad-1dd78bc9a72d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DirectX\Calc">
+      <UniqueIdentifier>{2efecc5f-1a88-4573-8bbf-e8e2e31ec910}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Figure.cpp">
-      <Filter>ソース ファイル\Calc</Filter>
-    </ClCompile>
     <ClCompile Include="RegressEquation.cpp">
-      <Filter>ソース ファイル\Calc</Filter>
+      <Filter>ソース ファイル\DirectX\Calc</Filter>
     </ClCompile>
     <ClCompile Include="Spline.cpp">
-      <Filter>ソース ファイル\Calc</Filter>
+      <Filter>ソース ファイル\DirectX\Calc</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>ソース ファイル\Camera</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\Camera</Filter>
     </ClCompile>
     <ClCompile Include="DirectInput.cpp">
       <Filter>ソース ファイル\DirectX</Filter>
@@ -106,78 +91,69 @@
       <Filter>ソース ファイル\DirectX</Filter>
     </ClCompile>
     <ClCompile Include="Animation.cpp">
-      <Filter>ソース ファイル\Draw\2D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\2D</Filter>
     </ClCompile>
     <ClCompile Include="AnimationTable.cpp">
-      <Filter>ソース ファイル\Draw\2D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\2D</Filter>
     </ClCompile>
     <ClCompile Include="IndexTexture.cpp">
-      <Filter>ソース ファイル\Draw\2D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\2D</Filter>
     </ClCompile>
     <ClCompile Include="InstantEffect.cpp">
-      <Filter>ソース ファイル\Draw\2D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\2D</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
-      <Filter>ソース ファイル\Draw\2D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\2D</Filter>
     </ClCompile>
     <ClCompile Include="TextureTable.cpp">
-      <Filter>ソース ファイル\Draw\2D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\2D</Filter>
     </ClCompile>
     <ClCompile Include="Ball.cpp">
-      <Filter>ソース ファイル\Draw\3D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\3D</Filter>
     </ClCompile>
     <ClCompile Include="Model.cpp">
-      <Filter>ソース ファイル\Draw\3D</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\3D</Filter>
     </ClCompile>
     <ClCompile Include="2DTexture.cpp">
-      <Filter>ソース ファイル\Draw</Filter>
+      <Filter>ソース ファイル\DirectX\Draw</Filter>
     </ClCompile>
     <ClCompile Include="DrawObject.cpp">
-      <Filter>ソース ファイル\Draw</Filter>
+      <Filter>ソース ファイル\DirectX\Draw</Filter>
     </ClCompile>
     <ClCompile Include="DXObject.cpp">
-      <Filter>ソース ファイル\Draw</Filter>
+      <Filter>ソース ファイル\DirectX\Draw</Filter>
     </ClCompile>
     <ClCompile Include="Chara.cpp">
-      <Filter>ソース ファイル\Draw</Filter>
+      <Filter>ソース ファイル\DirectX\Draw</Filter>
     </ClCompile>
     <ClCompile Include="Common.cpp">
-      <Filter>ソース ファイル\Formal</Filter>
+      <Filter>ソース ファイル\General</Filter>
     </ClCompile>
     <ClCompile Include="FPSManager.cpp">
-      <Filter>ソース ファイル\Formal</Filter>
+      <Filter>ソース ファイル\General</Filter>
     </ClCompile>
     <ClCompile Include="MaltiThread.cpp">
-      <Filter>ソース ファイル\Formal</Filter>
+      <Filter>ソース ファイル\General</Filter>
     </ClCompile>
     <ClCompile Include="Task.cpp">
-      <Filter>ソース ファイル\Formal</Filter>
+      <Filter>ソース ファイル\General</Filter>
     </ClCompile>
     <ClCompile Include="BumpMap.cpp">
-      <Filter>ソース ファイル\HLSL</Filter>
+      <Filter>ソース ファイル\DirectX\Draw\HLSL</Filter>
     </ClCompile>
-    <ClCompile Include="Block.cpp">
-      <Filter>ソース ファイル\temp</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockManager.cpp">
-      <Filter>ソース ファイル\temp</Filter>
-    </ClCompile>
-    <ClCompile Include="HitSquare.cpp">
-      <Filter>ソース ファイル\temp</Filter>
+    <ClCompile Include="Figure.cpp">
+      <Filter>ソース ファイル\DirectX\Calc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Figure.h">
-      <Filter>ヘッダー ファイル\Calc</Filter>
-    </ClInclude>
     <ClInclude Include="RegressEquation.h">
-      <Filter>ヘッダー ファイル\Calc</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Calc</Filter>
     </ClInclude>
     <ClInclude Include="Spline.h">
-      <Filter>ヘッダー ファイル\Calc</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Calc</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>ヘッダー ファイル\Camera</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Camera</Filter>
     </ClInclude>
     <ClInclude Include="DebugFont.h">
       <Filter>ヘッダー ファイル\DirectX</Filter>
@@ -198,67 +174,61 @@
       <Filter>ヘッダー ファイル\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="2DTexture.h">
-      <Filter>ヘッダー ファイル\Draw</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw</Filter>
     </ClInclude>
     <ClInclude Include="Chara.h">
-      <Filter>ヘッダー ファイル\Draw</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw</Filter>
     </ClInclude>
     <ClInclude Include="DrawObject.h">
-      <Filter>ヘッダー ファイル\Draw</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw</Filter>
     </ClInclude>
     <ClInclude Include="DXObject.h">
-      <Filter>ヘッダー ファイル\Draw</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
-      <Filter>ヘッダー ファイル\Draw\2D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\2D</Filter>
     </ClInclude>
     <ClInclude Include="AnimationTable.h">
-      <Filter>ヘッダー ファイル\Draw\2D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\2D</Filter>
     </ClInclude>
     <ClInclude Include="IndexTexture.h">
-      <Filter>ヘッダー ファイル\Draw\2D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\2D</Filter>
     </ClInclude>
     <ClInclude Include="InstantEffect.h">
-      <Filter>ヘッダー ファイル\Draw\2D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\2D</Filter>
     </ClInclude>
     <ClInclude Include="Texture.h">
-      <Filter>ヘッダー ファイル\Draw\2D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\2D</Filter>
     </ClInclude>
     <ClInclude Include="TextureTable.h">
-      <Filter>ヘッダー ファイル\Draw\2D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\2D</Filter>
     </ClInclude>
     <ClInclude Include="Ball.h">
-      <Filter>ヘッダー ファイル\Draw\3D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\3D</Filter>
     </ClInclude>
     <ClInclude Include="Model.h">
-      <Filter>ヘッダー ファイル\Draw\3D</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\3D</Filter>
     </ClInclude>
     <ClInclude Include="Common.h">
-      <Filter>ヘッダー ファイル\Formal</Filter>
+      <Filter>ヘッダー ファイル\General</Filter>
     </ClInclude>
     <ClInclude Include="FPSManager.h">
-      <Filter>ヘッダー ファイル\Formal</Filter>
+      <Filter>ヘッダー ファイル\General</Filter>
     </ClInclude>
     <ClInclude Include="Macro.h">
-      <Filter>ヘッダー ファイル\Formal</Filter>
+      <Filter>ヘッダー ファイル\General</Filter>
     </ClInclude>
     <ClInclude Include="MaltiThread.h">
-      <Filter>ヘッダー ファイル\Formal</Filter>
+      <Filter>ヘッダー ファイル\General</Filter>
     </ClInclude>
     <ClInclude Include="Task.h">
-      <Filter>ヘッダー ファイル\Formal</Filter>
+      <Filter>ヘッダー ファイル\General</Filter>
     </ClInclude>
     <ClInclude Include="BumpMap.h">
-      <Filter>ヘッダー ファイル\HLSL</Filter>
+      <Filter>ヘッダー ファイル\DirectX\Draw\HLSL</Filter>
     </ClInclude>
-    <ClInclude Include="Block.h">
-      <Filter>ヘッダー ファイル\temp</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockManager.h">
-      <Filter>ヘッダー ファイル\temp</Filter>
-    </ClInclude>
-    <ClInclude Include="HitSquare.h">
-      <Filter>ヘッダー ファイル\temp</Filter>
+    <ClInclude Include="Figure.h">
+      <Filter>ヘッダー ファイル\DirectX\Calc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

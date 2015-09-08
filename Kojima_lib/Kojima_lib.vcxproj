@@ -83,8 +83,6 @@
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="AnimationTable.cpp" />
     <ClCompile Include="Ball.cpp" />
-    <ClCompile Include="Block.cpp" />
-    <ClCompile Include="BlockManager.cpp" />
     <ClCompile Include="BumpMap.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Chara.cpp" />
@@ -100,7 +98,6 @@
     <ClCompile Include="DXObject.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="FPSManager.cpp" />
-    <ClCompile Include="HitSquare.cpp" />
     <ClCompile Include="IndexTexture.cpp" />
     <ClCompile Include="InstantEffect.cpp" />
     <ClCompile Include="MaltiThread.cpp" />
@@ -118,8 +115,6 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="AnimationTable.h" />
     <ClInclude Include="Ball.h" />
-    <ClInclude Include="Block.h" />
-    <ClInclude Include="BlockManager.h" />
     <ClInclude Include="BumpMap.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Chara.h" />
@@ -132,7 +127,6 @@
     <ClInclude Include="DXObject.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="FPSManager.h" />
-    <ClInclude Include="HitSquare.h" />
     <ClInclude Include="IndexTexture.h" />
     <ClInclude Include="InstantEffect.h" />
     <ClInclude Include="Macro.h" />

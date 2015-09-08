@@ -1,24 +1,10 @@
-//=============================================================================
-//  DirectInput関係の自作関数群
-//  Copyright NKC Game Staff(←自分の名前)　
-//-----------------------------------------------------------------------------
-//-----------------------------------------------------------------------------
-// Include files
-//-----------------------------------------------------------------------------
 #include "Common.h"
 #include "DirectInput.h"
 
-//-----------------------------------------------------------------------------
-// マクロ
-//-----------------------------------------------------------------------------
 // Joypad用設定値
 #define DEADZONE		2500			// 各軸の25%を無効ゾーンとする
 #define RANGE_MAX		1000			// 有効範囲の最大値
 #define RANGE_MIN		-1000			// 有効範囲の最小値
-
-//-----------------------------------------------------------------------------
-// グローバル変数（他のソースからも利用されるもの）
-//-----------------------------------------------------------------------------
 
 CDirectInput::CDirectInput()
 {
@@ -183,11 +169,6 @@ bool CDirectInput::InitJoypad(void)
 		hr = m_pDIJoypad[i]->SetDataFormat(&c_dfDIJoystick);
 		if ( FAILED(hr) )
 			return false; // データフォーマットの設定に失敗
-
-		// モードを設定（フォアグラウンド＆非排他モード）
-//		hr = m_diJoyState[i]->SetCooperativeLevel(hWnd, DISCL_NONEXCLUSIVE | DISCL_FOREGROUND);
-//		if ( FAILED(hr) )
-//			return false; // モードの設定に失敗
 
 		// 軸の値の範囲を設定
 		// X軸、Y軸のそれぞれについて、オブジェクトが報告可能な値の範囲をセットする。
@@ -410,11 +391,6 @@ void CDirectInput::GetMouseState(void)
 	}
 
 	m_ExdiLclick = m_diLclick;
-	//if(dims.rgbButtons[1])
-	//	m_diLclick = false;
-	//else
-	//	m_diLclick = true;
-	//(m_diMouseState.rgbButtons[0] & 0x80) ? MState.lButton = true : MState.lButton = false;
 }
 
 //------------------------------------------

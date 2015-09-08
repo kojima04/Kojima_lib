@@ -80,10 +80,6 @@ void CPhoneShade::Begin()
 {
    if( m_pEffect )
    {
- /*     m_stpD3DDevice->GetTransform( D3DTS_VIEW, &m_matView );
-      m_stpD3DDevice->GetTransform( D3DTS_PROJECTION, &m_matProj );*/
-	  //m_matView = GetTransformView();
-	  //m_matProj = GetTransformProj();
       m_pEffect->Begin( NULL, 0 );
    }
 }
@@ -213,65 +209,64 @@ void CPhoneShade::Draw()
 	m_stpD3DDevice->SetSamplerState( 1, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR );       
 	m_stpD3DDevice->SetSamplerState( 1, D3DSAMP_MIPFILTER, D3DTEXF_NONE );
 
-	  //ワールド座標変換
+	//ワールド座標変換
 	D3DXMatrixIdentity( &m_World );
 	  m_stpD3DDevice->SetTransform( D3DTS_WORLD, &m_World );
 
-	  //ティーポットのテクスチャーをステージ０にセットする
-	  m_stpD3DDevice->SetTexture( 0, *GetTexture(0) );
-	  //法線マップをステージ１にセットする
-	  m_stpD3DDevice->SetTexture( 1, m_pNormalMap );
+	//テクスチャーをステージ０にセットする
+	m_stpD3DDevice->SetTexture( 0, *GetTexture(0) );
+	//法線マップをステージ１にセットする
+	m_stpD3DDevice->SetTexture( 1, m_pNormalMap );
 
 	//ID3DXMeshインターフェースを使用する場合必要なし
-	//      //頂点シェーダ宣言をバンプマッピング用に設定する
-	//      m_pd3dDevice->SetVertexDeclaration( m_pDecl );
+	//頂点シェーダ宣言をバンプマッピング用に設定する
+	//m_pd3dDevice->SetVertexDeclaration( m_pDecl );
 
-	  D3DXVECTOR4 m_pCameraPos = D3DXVECTOR4(m_stpCameraPos->x,m_stpCameraPos->y,m_stpCameraPos->z, 1.0f );
+	D3DXVECTOR4 m_pCameraPos = D3DXVECTOR4(m_stpCameraPos->x,m_stpCameraPos->y,m_stpCameraPos->z, 1.0f );
 	  
-	  for(DWORD i = 0; i < m_NumMaterial; ++i)
-	  {
+	for(DWORD i = 0; i < m_NumMaterial; ++i)
+	{
 
-	  //ティーポットをレンダリング
-	  Begin();
-	  //マテリアルを設定する
-	  SetAmbient( 0.0f );
-	  SetSpecular( 20.0f );
-	  SetSpecularPower( 0.75f );
-	  SetMatrix( &m_World, &m_pCameraPos, &LightDir );
+	//レンダリング開始
+	Begin();
+	//マテリアルを設定する
+	SetAmbient( 0.0f );
+	SetSpecular( 20.0f );
+	SetSpecularPower( 0.75f );
+	SetMatrix( &m_World, &m_pCameraPos, &LightDir );
 
-		GetDevice()->SetMaterial(&m_pMaterial[i]);
-		m_stpD3DDevice->SetTexture( 0,m_pTexture[i]);
+	GetDevice()->SetMaterial(&m_pMaterial[i]);
+	m_stpD3DDevice->SetTexture( 0,m_pTexture[i]);
 
-		 BeginPass();
-		 GetMesh()->DrawSubset(i);
+		BeginPass();
+		GetMesh()->DrawSubset(i);
 	  
-	  //m_pLocalMesh->DrawSubset( 0 );
-	     EndPass();
-	     End();
-	  }
+	    EndPass();
+	    End();
+	}
 
-	  m_stpD3DDevice->SetTexture( 1, NULL );
+	m_stpD3DDevice->SetTexture( 1, NULL );
 	     
-	  hr = m_stpD3DDevice->Present( NULL, NULL, NULL, NULL );
+	hr = m_stpD3DDevice->Present( NULL, NULL, NULL, NULL );
 	  
-	  //デバイスロストのチェック
-	  switch( hr )
-	  {
-	  //デバイスロスト
-	  case D3DERR_DEVICELOST:
-		// RenderOK = false;
-		 break;
+	//デバイスロストのチェック
+	switch( hr )
+	{
+	//デバイスロスト
+	case D3DERR_DEVICELOST:
+	// RenderOK = false;
+		break;
 
-	  //内部ドライバーエラー
-	  case D3DERR_DRIVERINTERNALERROR:
-		// return FALSE;
-		 break;
+	//内部ドライバーエラー
+	case D3DERR_DRIVERINTERNALERROR:
+	// return FALSE;
+		break;
 
-	  //メソッドの呼び出しが無効です
-	  case D3DERR_INVALIDCALL:
-		// return FALSE;
-		 break;
-	  }
+	//メソッドの呼び出しが無効です
+	case D3DERR_INVALIDCALL:
+	// return FALSE;
+		break;
+	}
    
 
 }
